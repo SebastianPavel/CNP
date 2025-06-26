@@ -68,7 +68,7 @@ const validCNP = (cnp) => {
         return false;
       }
   }
-  if (contyCode < 0 || (contyCode > 46 && contyCode < 51) || contyCode > 52) {
+  if (contyCode !== 70 && (contyCode < 0 || (contyCode > 46 && contyCode < 51) || contyCode > 52)) {
     return false;
   }
   let controlSum = cnp.reduce((sum, cnp, i) => {
